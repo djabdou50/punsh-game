@@ -1,26 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import {PunshesContext} from "./PunshesContext";
+import Policeman from "./Components/Policeman";
+import AminesHand from "./Components/AminesHand";
+import Ui from "./Components/UI";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+    // policeman
+    // amines hand
+    // bunch btn
+    // score
+    // intro vs score animation
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            score: {
+                value: 0,
+                setScore: this.setScore
+            },
+            punsh: {
+                value: false,
+                setPunsh: this.setPunsh,
+            }
+        };
+    }
+
+
+    setScore = (value) => {
+        this.setState({ score: {
+                ...this.state.score,
+                value: value,
+            } });
+    };
+
+    setPunsh = (value) => {
+        this.setState({ punsh: {
+                ...this.state.punsh,
+                value: value,
+            } });
+    };
+
+
+    render() {
+        return (
+            <div className="App">
+                <PunshesContext.Provider value={{score: this.state.score, punsh: this.state.punsh}}>
+                <div className="background">
+
+                    <Policeman/>
+                    <AminesHand/>
+                    <Ui/>
+
+                </div>
+                </PunshesContext.Provider>
+            </div>
+        );
+    }
 }
 
 export default App;
