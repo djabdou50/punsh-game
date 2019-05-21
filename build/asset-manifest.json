@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5ea2c55f.chunk.css",
+    "main.js": "/static/js/main.e1e1b4ab.chunk.js",
+    "main.js.map": "/static/js/main.e1e1b4ab.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.ee670bdf.chunk.js": "/static/js/2.ee670bdf.chunk.js",
+    "static/js/2.ee670bdf.chunk.js.map": "/static/js/2.ee670bdf.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.68ab75c7c9d0b7cfb8316e4527585c61.js": "/precache-manifest.68ab75c7c9d0b7cfb8316e4527585c61.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5ea2c55f.chunk.css.map": "/static/css/main.5ea2c55f.chunk.css.map",
+    "static/media/ar-hand.png": "/static/media/ar-hand.8601bea3.png",
+    "static/media/ar-head.png": "/static/media/ar-head.9bf3f082.png",
+    "static/media/policeman-foot.png": "/static/media/policeman-foot.58704f69.png",
+    "static/media/policeman.png": "/static/media/policeman.0801583f.png",
+    "static/media/punch.png": "/static/media/punch.c00cc1ae.png",
+    "static/media/smack-png-13.png": "/static/media/smack-png-13.226d07d9.png"
+  }
+}
